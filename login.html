@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login - Lista de Compras </title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <title>login lista de compras</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2> Login </h2>
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <button onclick="cadastro()">Cadastrar</button>
 
-    <input type="email" id="email" placeholder="Digite o seu E-MAIL de login">
-
-    <input type="password" id="password" placeholder="Digite aqui a sua SENHA de login">
-
-    <button onclick="login()"> Login </button>
-    <a href="nova-senha"> Esqueceu a sua senha? </a>
-    
-    <button onclick="cadastro()"> Cadastre-se </button>
-
-    <script type="module" src="auth.js">        
-    </script>
+    <script type="module" src="auth.js"></script>
     
 </body>
 </html>
