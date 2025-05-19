@@ -65,9 +65,6 @@ getUser().then(carregarLista)
 
 document.addEventListener('keydown'), function (event) {
   if (event.key === 'Enter') {
-    const caminho = window.location.pathname
-    if (caminho.includes('login')) {
-      adicionarItem()
-    }
+    adicionarItem()
   }
 }
