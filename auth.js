@@ -29,13 +29,12 @@ window.cadastro = async function () {
 }
 
 document.addEventListener('keydown', function(event){
-  if (event.key === 'Enter') {
+  if(event.key === 'Enter'){
     const caminho = window.location.pathname
-    if (caminho.includes('login')) {
+    if(caminho.includes('login')){
       login()
-
-    } else if (caminho.includes('cadastro')) {
-      cadastro()
-    }
+      } else if(caminho.includes('cadastro')){
+        cadastro()
+      }
   }
 })
