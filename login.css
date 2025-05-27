@@ -29,3 +29,10 @@ body {
     background: #03045E;
     background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 180, 216, 1) 35%, rgba(202, 240, 248, 1) 100%);
 }
+
+.login {
+    border: .3hv solid black;
+    border-style: ;
+    display: flex;
+    displ
+}
