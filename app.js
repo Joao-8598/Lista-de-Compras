@@ -68,3 +68,46 @@ document.addEventListener('keydown', function (event) {
     adicionarItem()
   }
 })
+
+//----------------------------------------//
+
+async function carregarCategorias() {
+  const select = document.getElementById('select')
+  const { data, error } = await supabase.from('categorias').select('*')
+
+  if (error) {
+    console.error('Erro ao carregar categorias:', error)
+    return
+  }
+
+  // Limpa e popula o select
+  select.innerHTML = '<option value="">Selecione uma categoria</option>'
+  data.forEach((categoria) => {
+    const option = document.createElement('option')
+    option.value = categoria.id
+    option.textContent = categoria.nome
+    select.appendChild(option)
+  })
+}
+
+window.adicionarItem = async function () {
+  const user = await getUser()
+  const categoria = document.getElementById('select').value
+
+  const { error } = await supabase.from('lista_compras').insert({
+    item: input.value,
+    adicionado_por: user.id,
+    categoria_id: categoria || null // Assumindo que há uma coluna categoria_id
+  })
+
+  if (error) return alert('Erro ao adicionar: ' + error.message)
+
+  input.value = ''
+  carregarLista()
+}
+
+
+getUser().then(() => {
+  carregarLista()
+  carregarCategorias()
+})
