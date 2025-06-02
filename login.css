@@ -30,4 +30,26 @@ body {
     font-family: var(--fonte);
     background: #03045E;
     background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 180, 216, 1) 35%, rgba(202, 240, 248, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    background: var(--Cor-BGC);
+    padding: clamp(2rem, 5vw, 3rem);
+    border-radius: var(--raio);
+    box-shadow: 0 8px 24px var(--Cor-Sombra);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    color: var(--Cor-Texto);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
