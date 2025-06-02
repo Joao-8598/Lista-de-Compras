@@ -37,7 +37,7 @@ body {
     padding: 20px;
 }
 
-.container {
+.conteiner {
     background: var(--Cor-BGC);
     padding: clamp(2rem, 5vw, 3rem);
     border-radius: var(--raio);
