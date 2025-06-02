@@ -31,7 +31,7 @@
 body {
     font-family: var(--fonte);
     background: #03045E;
-    background: linear-gradient(180deg, rgba(3, 4, 94, 1) 0%, rgba(0, 180, 216, 1) 35%, rgba(202, 240, 248, 1) 100%);
+    background: linear-gradient(0deg, rgba(3, 4, 94, 1) 0%, rgba(0, 180, 216, 1) 35%, rgba(202, 240, 248, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
