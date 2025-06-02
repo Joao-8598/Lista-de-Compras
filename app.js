@@ -68,14 +68,3 @@ document.addEventListener('keydown', function (event) {
     adicionarItem()
   }
 })
-
-//----------------------------------------//
-
-async function carregarCategorias() {
-  const select = document.getElementById('select')
-  const { data, error } = await supabase.from('categorias').select('*')
-
-  if (error) {
-    console.error('Erro ao carregar categorias:', error)
-    return
-  }
