@@ -86,6 +86,7 @@ input:focus {
 }
 
 .botoes {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
