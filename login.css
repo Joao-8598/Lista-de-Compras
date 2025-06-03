@@ -95,16 +95,18 @@ input:focus {
 
 button {
     background-image: linear-gradient(to right, rgba(0, 180, 216, 1) 30%, rgba(202, 240, 248, 1) 80%);
-    margin: 10px;
-    padding: 15px 45px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--raio);
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
     box-shadow: 0 0 20px rgba(202, 240, 248, 1);
-    border-radius: 10px;
-    display: block;
+    cursor: pointer;
 
 }
 
