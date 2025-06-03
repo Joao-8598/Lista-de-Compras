@@ -4,7 +4,7 @@
 :root {
     --Cor-Primaria: rgba(3, 4, 94, 1);
     --Cor-Primaria-Escura: pink;
-    --Cor-Secundaria: linear-gradient(0deg, rgba(0, 180, 216, 1) 30%, rgba(202, 240, 248, 1) 80%);
+    --Cor-Secundaria: rgba(202, 240, 248, 1);
     --Cor-Secundaria-Escura: red;
     --Cor-BGC: #f5f7fa;
     --Cor-BGC-Escura: green;
@@ -91,7 +91,7 @@ button {
     font-weight: 500;
     border: none;
     border-radius: var(--raio);
-    background: linear-gradient(rgba(0, 180, 216, 1) 30%, rgba(202, 240, 248, 1) 80%);
+    background-color: var(--Cor-Secundaria);
     transition: var(--transition);
     cursor: pointer;
 
