@@ -28,7 +28,7 @@ window.cadastro = async function () {
   }
 }
 
-
+// Função para linkar a tecla "Enter" com o botão login
 document.addEventListener('keydown', function(event){
   if(event.key === 'Enter'){
     const caminho = window.location.pathname

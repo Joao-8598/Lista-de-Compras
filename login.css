@@ -82,8 +82,7 @@ button {
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
+    background-size: 200% auto;      
     box-shadow: 0 0 20px rgba(202, 240, 248, 1);
     border: 1px solid black;
     border-radius: 10px;
