@@ -4,7 +4,7 @@
 :root {
     --Cor-Primaria: rgba(3, 4, 94, 1);
     --Cor-Primaria-Escura: pink;
-    --Cor-Secundaria: linear-gradient(0deg, rgba(0, 180, 216, 1) 5%, rgba(202, 240, 248, 1) 80%);
+    --Cor-Secundaria: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
     --Cor-Secundaria-Escura: red;
     --Cor-BGC: #f5f7fa;
     --Cor-BGC-Escura: green;
@@ -40,7 +40,7 @@ body {
 
 }
 
-.conteiner {
+.container {
     background: var(--Cor-BGC);
     padding: clamp(2rem, 5vw, 3rem);
     border-radius: var(--raio);
@@ -49,6 +49,14 @@ body {
     max-width: 400px;
     text-align: center;
     
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: var(--raio);
+
 }
 
 .titulo {
@@ -102,8 +110,33 @@ button:hover {
 
 }
 
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
+
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+
+}
+
 @media(max-width: 360px) {
-    .conteiner {
+    .container {
         padding: 1.5rem;
 
     }
