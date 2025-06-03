@@ -91,7 +91,7 @@ button {
     font-weight: 500;
     border: none;
     border-radius: var(--raio);
-    background-color: var(--Cor-Secundaria);
+    background: var(--Cor-Secundaria);
     transition: var(--transition);
     cursor: pointer;
 
