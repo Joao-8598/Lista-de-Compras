@@ -90,63 +90,28 @@ input:focus {
     flex-direction: column;
     gap: 12px;
     margin-top: 20px;
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
 
 }
 
 button {
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
     padding: 12px;
     font-size: 1rem;
     font-weight: 500;
     border: none;
     border-radius: var(--raio);
+    background-color: var(--Cor-Secundaria);
+    transition: var(--transition);
     cursor: pointer;
 
 }
 
 button:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-
-}
-
-.btn-grad {
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
-
-}
-
-.btn-grad {
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-}
-
-.btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+    background-color: var(--Cor-Secundaria-Escura);
 
 }
 
 @media(max-width: 360px) {
-    .container {
+    .conteiner {
         padding: 1.5rem;
 
     }
