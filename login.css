@@ -86,6 +86,10 @@ input:focus {
 }
 
 .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -95,11 +99,17 @@ input:focus {
     color: white;            
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
-    display: block;
+
 }
 
 button {
     background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--raio);
+    cursor: pointer;
 
 }
 
