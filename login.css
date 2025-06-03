@@ -91,7 +91,7 @@ button {
     font-weight: 500;
     border: none;
     border-radius: var(--raio);
-    background-color: linear-gradient(0deg, rgba(0, 180, 216, 1) 30%, rgba(202, 240, 248, 1) 80%);
+    background: linear-gradient(0deg, rgba(0, 180, 216, 1) 30%, rgba(202, 240, 248, 1) 80%);
     transition: var(--transition);
     cursor: pointer;
 
