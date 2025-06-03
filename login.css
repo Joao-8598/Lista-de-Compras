@@ -4,7 +4,7 @@
 :root {
     --Cor-Primaria: rgba(3, 4, 94, 1);
     --Cor-Primaria-Escura: pink;
-    --Cor-Secundaria: linear-gradient(rgba(0, 180, 216, 1) 10%, rgba(202, 240, 248, 1) 80%);
+    --Cor-Secundaria: linear-gradient(0deg, rgba(0, 180, 216, 1) 5%, rgba(202, 240, 248, 1) 80%);
     --Cor-Secundaria-Escura: red;
     --Cor-BGC: #f5f7fa;
     --Cor-BGC-Escura: green;
