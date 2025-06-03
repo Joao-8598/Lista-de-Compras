@@ -4,7 +4,7 @@
 :root {
     --Cor-Primaria: rgba(3, 4, 94, 1);
     --Cor-Primaria-Escura: pink;
-    --Cor-Secundaria: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    --Cor-Secundaria: rgba(202, 240, 248, 1);
     --Cor-Secundaria-Escura: red;
     --Cor-BGC: #f5f7fa;
     --Cor-BGC-Escura: green;
@@ -86,22 +86,22 @@ input:focus {
 }
 
 .botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
 
 }
 
 button {
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: 500;
-    border: none;
-    border-radius: var(--raio);
-    background: var(--Cor-Secundaria);
-    transition: var(--transition);
-    cursor: pointer;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+
 
 }
 
