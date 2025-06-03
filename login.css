@@ -104,7 +104,7 @@ button {
     background-size: 200% auto;
     color: white;            
     box-shadow: 0 0 20px rgba(202, 240, 248, 1);
-    border: 5px solid var(--Cor-Borda);
+    border: 2px solid var(--Cor-Borda);
     border-radius: 10px;
     cursor: pointer;
 
