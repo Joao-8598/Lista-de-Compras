@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login - Lista de Compras </title>
+    <title> Cadastro - Lista de Compras </title>
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -16,15 +16,14 @@
     <div class="container">
         <img id="logo" src="/icons/icon-512x512.png" alt="logo">
         <div class="login">
-            <h2> Login </h2>
+            <h2> Cadastro </h2>
+            <input type="text" id="nome_usu" placeholder="Nome de Usuário">
             <input type="email" id="email" placeholder="E-MAIL de login">
             <input type="password" id="senha" placeholder="SENHA de login">
             <br>
-            <a href="nova-senha"> Esqueceu a sua senha? </a>
             
             <div class="botoes">
-                <button onclick="login()"> Login </button>
-                <button> <a href="cadastro.html"> Cadastre-se </a> </button>
+                <button onclick="cadastro()"> Cadastre-se </button>
             </div>
         </div>
 
