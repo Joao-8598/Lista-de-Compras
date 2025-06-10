@@ -23,7 +23,7 @@ async function carregarLista() {
   lista.innerHTML = ''
   data.forEach((item) => {
     const li = document.createElement('li')
-    li.innerHTML = `${item.item} <button onclick="removerItem('${item.id}')">Remover</button>`
+    li.innerHTML = `${item.item} <button onclick="removerItem('${item.id_item}')">Remover</button>`
     lista.appendChild(li)
   })
 }
@@ -46,8 +46,8 @@ window.adicionarItem = async function () {
 }
 
 // Remove item da lista pelo ID
-window.removerItem = async function (id) {
-  const { error } = await supabase.from('lista_compras').delete().eq('id', id)
+window.removerItem = async function (id_item) {
+  const { error } = await supabase.from('lista_compras').delete().eq('id_item', id_item)
   if (error) return alert('Erro ao remover: ' + error.message)
   carregarLista()
 }
