@@ -17,7 +17,6 @@ window.login = async function () {
 
 // Função para cadastrar novo usuário
 window.cadastro = async function () {
-  const nome_usu = document.getElementById('nome_usu').value
   const email = document.getElementById('email').value
   const senha = document.getElementById('senha').value
 
