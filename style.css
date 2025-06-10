@@ -16,3 +16,10 @@ body {
     padding: 20px;
 
 }
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
